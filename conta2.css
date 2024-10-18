@@ -1,0 +1,48 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "a main main b"
+        "footer footer footer footer";
+    gap: 10px;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+.main {
+    grid-area: main;
+    background-color: chartreuse;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(4, 40, 4)n;
+
+}
+
+
+
+
+.header {
+    grid-area: header;
+    background-color: rgb(74, 40, 225);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+.sidebarA {
+    grid-area: a;
+    background-color: rgb(245, 112, 64);
+
+}
+.sidebarB {
+    grid-area: b;
+    background-color: rgb(34, 208, 150);
+
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(3, 45, 45);
+    color: white;
+
+}
+
