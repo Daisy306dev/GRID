@@ -4,8 +4,8 @@ function nnnnN(el) {
     document.querySelector("p").innerHTML = `this is a ${el.name}`;               //`${}` 사용함     --> object 값에서 속성값찾기 가능!
 }
 document.getElementById("name").onclick = function () {nnnnN(objectDog)};        //eventhandler 사용할때는 *함수의 결과값을 넣지말고
-                                                                                //함수 그자체를 넣어야한다. function () {funcName(para)}
-                                                                                // -->클릭시 이벤트 발동!
+                                                                                //함수 그자체를 넣어야한다. (funcName(para) parameter가 있을때만..)
+                                                                                // function () {funcName(para)} ... 클릭시 이벤트 발동!
 
 function nnnnN2(el) {
     document.querySelector("p").innerHTML = `this is ${el.breed}`;
@@ -18,13 +18,13 @@ function nnnnN3(el) {
 document.getElementById("nature").onclick = function () {nnnnN3(objectDog)};
 
 
-function imgUpdate() {
+function imgUpdate() {              //parameter가 없는 함수.. 
     document.getElementById("D1").src ="https://i.pinimg.com/236x/0a/48/f6/0a48f6e8afb1ec144d1fddba84287595.jpg"; //사진소스업데이트.
     objectDog.name = "puppy";
     objectDog.breed = "malamute";
     objectDog.nature = "optimistic";              //object 각 속성값을 업데이트!
     
-    document.getElementById("Dp").onclick = imgUpdate2;       //함수 안에서 함수를 호출! event와 eventHandler 활용!
+    document.getElementById("Dp").onclick = imgUpdate2;       //함수 안에서 함수를 호출! event와 eventHandler 활용! parameter가 없는 함수 호출..
 };
 
 document.getElementById("Dp").onclick = imgUpdate;           //함수를 호출.
@@ -38,7 +38,7 @@ function imgUpdate2() {
 
 
 
-//아래는 미완성 작업..
+//.... cat
 function nnnnN4() {
     document.getElementById("par2").innerHTML = `this is a cat`;
 }
