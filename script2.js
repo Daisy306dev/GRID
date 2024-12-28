@@ -1,32 +1,32 @@
-function nnnnN() {
-    document.querySelector("p").innerHTML = `this is a dog`;
+function introduceName() {
+    return document.querySelector("p").innerHTML = `this is a dog`;
 }
-document.getElementById("name").onclick = nnnnN;
+document.getElementById("name").onclick = introduceName;
 
-function nnnnN2() {
-    document.querySelector("p").innerHTML = `this is shibainu`;
+function introduceBreed() {
+    return  document.querySelector("p").innerHTML = `this is shibainu`;
 }
-document.getElementById("breed").onclick = nnnnN2;
+document.getElementById("breed").onclick = introduceBreed;
 
-function nnnnN3() {
-    document.querySelector("p").innerHTML = `this is confident`;
+function introduceNature() {
+    return document.querySelector("p").innerHTML = `this is confident`;
 }
-document.getElementById("nature").onclick = nnnnN3;
+document.getElementById("nature").onclick = introduceNature;
 
 
 
 
-function nnnnN4() {
-    document.getElementById("par2").innerHTML = `this is a cat`;
+function introduceName2() {
+    return document.getElementById("par2").innerHTML = `this is a cat`;
 }
-document.getElementById("name2").onclick = nnnnN4;
+document.getElementById("name2").onclick = introduceName2;
 
-function nnnnN5() {
-    document.getElementById("par2").innerHTML = `this is Mackerel tabby`;
+function introduceBreed2() {
+    return document.getElementById("par2").innerHTML = `this is Mackerel tabby`;
 }
-document.getElementById("breed2").onclick = nnnnN5;
+document.getElementById("breed2").onclick = introduceBreed2;
 
-function nnnnN6() {
-    document.getElementById("par2").innerHTML = `this is moody`;
+function introduceNature2() {
+    return document.getElementById("par2").innerHTML = `this is moody`;
 }
-document.getElementById("nature2").onclick = nnnnN6;
+document.getElementById("nature2").onclick = introduceNature2;
