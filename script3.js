@@ -1,21 +1,21 @@
 const objectDog = { name: "dog", breed: "shibainu", nature: "confident" };  //object 사용함.  ==>objext 값을 업데이트가능!
 
-function nnnnN(el) {
+function introduceName(el) {
     document.querySelector("p").innerHTML = `this is a ${el.name}`;               //`${}` 사용함     --> object 값에서 속성값찾기 가능!
 }
-document.getElementById("name").onclick = function () {nnnnN(objectDog)};        //eventhandler 사용할때는 *함수의 결과값을 넣지말고
+document.getElementById("name").onclick = function () {introduceName(objectDog)};        //eventhandler 사용할때는 *함수의 결과값을 넣지말고
                                                                                 //함수 그자체를 넣어야한다. (funcName(para) parameter가 있을때만..)
                                                                                 // function () {funcName(para)} ... 클릭시 이벤트 발동!
 
-function nnnnN2(el) {
+function introduceBreed(el) {
     document.querySelector("p").innerHTML = `this is ${el.breed}`;
 }
-document.getElementById("breed").onclick = function () {nnnnN2(objectDog)};
+document.getElementById("breed").onclick = function () {introduceBreed(objectDog)};
 
-function nnnnN3(el) {
+function introduceNature(el) {
     document.querySelector("p").innerHTML = `this is ${el.nature}`;
 }
-document.getElementById("nature").onclick = function () {nnnnN3(objectDog)};
+document.getElementById("nature").onclick = function () {introduceNature(objectDog)};
 
 
 function imgUpdate() {              //parameter가 없는 함수.. 
@@ -39,17 +39,17 @@ function imgUpdate2() {
 
 
 //.... cat
-function nnnnN4() {
+function introduceName2() {
     document.getElementById("par2").innerHTML = `this is a cat`;
 }
-document.getElementById("name2").onclick = nnnnN4;
+document.getElementById("name2").onclick = introduceName2;
 
-function nnnnN5() {
+function introduceBreed2() {
     document.getElementById("par2").innerHTML = `this is Mackerel tabby`;
 }
-document.getElementById("breed2").onclick = nnnnN5;
+document.getElementById("breed2").onclick = introduceBreed2;
 
-function nnnnN6() {
+function introduceNature2() {
     document.getElementById("par2").innerHTML = `this is moody`;
 }
-document.getElementById("nature2").onclick = nnnnN6;
+document.getElementById("nature2").onclick = introduceNature2;
